@@ -34,16 +34,11 @@ class Functions {
         // Set functions, discald false values, grab keys
         $this->functions = array_keys( array_filter( $options ) );
 
-        // Fix for PHP <= 5.3.x not allowing $this inside of closures
-        $self = $this;
-
         // Add functions
-        if ( ! empty( $self->functions ) ) {
-            add_action( "init", function() use ( &$self ) {
-                foreach ( $self->functions as $function ) {
-                    $self->register_function( $function );
-                }
-            });
+        if ( ! empty( $this->functions ) ) {
+            foreach ( $this->functions as $function ) {
+                $this->register_function( $function );
+            }
         }
     }
 
