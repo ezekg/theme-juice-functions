@@ -28,6 +28,7 @@ class Functions {
 
         // Merge new options with defaults
         $options = array_merge( array(
+            "excerpt" => true,
             "title" => true,
         ), $options() );
 
