@@ -1,7 +1,7 @@
 {
     "name": "theme-juice/theme-juice-functions",
     "type": "library",
-    "description": "Helper functions for Theme Juice framework",
+    "description": "Functions for Theme Juice framework",
     "keywords": ["WordPress", "framework", "theme", "haml", "mthaml", "sass", "coffeescript"],
     "homepage": "https://github.com/theme-juice/theme-juice-functions",
     "license": "MIT",

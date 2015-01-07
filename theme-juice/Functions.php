@@ -3,7 +3,7 @@
 namespace ThemeJuice;
 
 /**
- * Setup and import helper functions
+ * Setup and import functions
  *
  * @package Theme Juice Starter
  * @subpackage Theme Juice Functions
@@ -15,7 +15,7 @@ namespace ThemeJuice;
 class Functions {
 
     /**
-     * @var {Array} - Array that contains functions to register
+     * @var {Array} - Array that contains functions to include
      */
     public $functions;
 
@@ -50,7 +50,7 @@ class Functions {
     /**
      * Register function
      *
-     * @param {String} $function - The name of the function to register
+     * @param {String} $function - The name of the function to include
      *
      * @return {Void}
      */
