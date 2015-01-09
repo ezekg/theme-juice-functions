@@ -16,7 +16,6 @@ function tj_page_is_related_to( $slugs ) {
     }
 
     foreach ( $slugs as $slug ) {
-        echo $slug;
 
         // Get page by slug
         $page = get_page_by_path( $slug );
