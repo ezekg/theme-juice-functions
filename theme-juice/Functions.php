@@ -29,6 +29,7 @@ class Functions {
         // Merge new options with defaults
         $options = array_merge( array(
             "page-is-related-to" => true,
+            "featured-image" => true,
             "excerpt" => true,
             "title" => true,
         ), $options() );
