@@ -30,6 +30,9 @@ class Functions {
         $options = array_merge( array(
             "page-is-related-to" => true,
             "featured-image" => true,
+            "search-form" => true,
+            "actions" => true,
+            "filters" => true,
             "excerpt" => true,
             "title" => true,
         ), $options() );
