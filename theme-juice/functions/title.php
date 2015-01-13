@@ -11,7 +11,7 @@ function tj_title( $display = true ) {
     $output = null;
 
     if ( is_home() ) {
-        if ( get_option( "page_for_posts", true) ) {
+        if ( get_option( "page_for_posts", true ) ) {
             $output = get_the_title( get_option( "page_for_posts", true ) );
         } else {
             $output = __( "Latest Posts", "theme-juice" );

@@ -32,7 +32,7 @@ add_action( "after_setup_theme", function() {
  *
  * @link http://codex.wordpress.org/Class_Reference/WP_Rewrite
  */
-add_action( "init", function() {
+add_action( "after_switch_theme", function() {
     global $wp_rewrite;
 
     if ( get_option( "permalink_structure" ) !== "/%postname%/" ) {
@@ -44,7 +44,8 @@ add_action( "init", function() {
 /**
  * Clean up WordPress head output
  *
- * @link http://wpengineer.com/1438/wordpress-header/
+ * @link http://codex.wordpress.org/Plugin_API/Action_Reference/wp_head
+ * @see http://wpengineer.com/1438/wordpress-header/
  */
 add_action( "init", function() {
 
