@@ -26,7 +26,7 @@ add_filter( "wp_title", function( $title, $sep ) {
 	}
 
 	// Add the site name
-	$title .= get_bloginfo( "name" );
+	$title = get_bloginfo( "name" );
 
 	// Add the site description for the home/front page
 	$site_description = get_bloginfo( "description", "display" );
