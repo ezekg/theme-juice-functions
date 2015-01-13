@@ -25,10 +25,8 @@ add_filter( "show_admin_bar", "__return_false" );
 // 		return $title;
 // 	}
 //
-// 	// Add the site name if not already in
-//     if ( strpos( $title, get_bloginfo( "name" ) ) === false ) {
-//     	$title .= get_bloginfo( "name" );
-//     }
+// 	// Add the site name
+// 	$title .= get_bloginfo( "name" );
 //
 // 	// Add the site description for the home/front page
 // 	$site_description = get_bloginfo( "description", "display" );
