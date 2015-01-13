@@ -28,6 +28,20 @@ add_action( "after_setup_theme", function() {
 });
 
 /**
+ * Change permalink structure to be "/%postname%/"
+ *
+ * @link http://codex.wordpress.org/Class_Reference/WP_Rewrite
+ */
+add_action( "init", function() {
+    global $wp_rewrite;
+
+    if ( get_option( "permalink_structure" ) !== "/%postname%/" ) {
+        $wp_rewrite->set_permalink_structure( "/%postname%/" );
+        $wp_rewrite->flush_rules();
+    }
+});
+
+/**
  * Clean up WordPress head output
  *
  * @link http://wpengineer.com/1438/wordpress-header/

@@ -26,4 +26,7 @@ function tj_search_form( $display = true, $button = "Search", $placeholder = "Se
     }
 }
 
+/**
+ * @link http://codex.wordpress.org/Function_Reference/get_search_form
+ */
 add_filter( "get_search_form", "tj_search_form" );
