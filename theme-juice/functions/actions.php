@@ -5,12 +5,16 @@
  */
 add_action( "after_setup_theme", function() {
 
+    // Check if language directory is defined, if not define it
+    defined( "WP_LANG_DIR" ) or define( "WP_LANG_DIR", WP_CONTENT_DIR . "/lang" );;
+
     /**
      * Make theme available for translation. Translations can be placed into the languages/ directory.
      *
      * @link http://codex.wordpress.org/Function_Reference/load_theme_textdomain
+     * @link http://svn.automattic.com/wordpress-i18n/
      */
-    load_theme_textdomain( "theme-juice", get_template_directory() . "/languages" );
+    load_theme_textdomain( "theme-juice", WP_LANG_DIR );
 
     /**
      * Enable theme and plugins to manage the head title
