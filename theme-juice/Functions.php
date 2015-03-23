@@ -34,6 +34,7 @@ class Functions {
             "actions" => true,
             "filters" => true,
             "excerpt" => true,
+            "lipsum" => true,
             "title" => true,
         ), $options() );
 
