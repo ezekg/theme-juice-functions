@@ -31,6 +31,7 @@ class Functions {
             "page-is-related-to" => true,
             "featured-image" => true,
             "search-form" => true,
+            "image-src" => true,
             "actions" => true,
             "filters" => true,
             "excerpt" => true,
