@@ -16,19 +16,19 @@ function tj_title( $display = true ) {
         } else {
             $output = __( "Latest Posts", "theme-juice" );
         }
-    } elseif ( is_search() ) {
+    } elseif ( is_search() && is_page() ) {
         $output = sprintf( __( "Search results for: %s", "theme-juice" ), get_search_query() );
-    } elseif ( is_category() ) {
+    } elseif ( is_category() && is_page() ) {
         $output = single_cat_title( "Category: ", false );
-    } elseif ( is_tag() ) {
+    } elseif ( is_tag() && is_page() ) {
         $output = single_tag_title( "Tag: ", false );
-    } elseif ( is_author() ) {
+    } elseif ( is_author() && is_page() ) {
         $output = sprintf( __( "Author: %s", "theme-juice" ), get_the_author() );
-    } elseif ( is_day() ) {
+    } elseif ( is_day() && is_page() ) {
         $output = sprintf( __( "Day: %s", "theme-juice" ), get_the_date() );
-    } elseif ( is_month() ) {
+    } elseif ( is_month() && is_page() ) {
         $output = sprintf( __( "Month: %s", "theme-juice" ), get_the_date( "F Y" ) );
-    } elseif ( is_year() ) {
+    } elseif ( is_year() && is_page() ) {
         $output = sprintf( __( "Year: %s", "theme-juice" ), get_the_date( "Y" ) );
     } elseif ( is_404() ) {
         $output = __( "Not Found", "theme-juice" );
