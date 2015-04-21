@@ -3,8 +3,8 @@
 /**
  * Get shortened content by num words
  *
- * @param {Integer} $count   (42) - Number of words in shortened content
- * @param {Bool}    $display      - Automatically echo output
+ * @param {Int}  $count   (42) - Number of words in shortened content
+ * @param {Bool} $display      - Automatically echo output
  *
  * @return {String} - Shorted content
  */

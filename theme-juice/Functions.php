@@ -28,14 +28,15 @@ class Functions {
 
         // Merge new options with defaults
         $options = array_merge( array(
-            "page-is-related-to" => true,
-            "featured-image" => true,
-            "search-form" => true,
-            "image-src" => true,
             "actions" => true,
-            "filters" => true,
             "excerpt" => true,
+            "featured-image" => true,
+            "filters" => true,
+            "image-src" => true,
             "lipsum" => true,
+            "page-is-related-to" => true,
+            "query-var" => true,
+            "search-form" => true,
             "title" => true,
         ), $options() );
 

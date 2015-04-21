@@ -3,7 +3,7 @@
 /**
  * Generate some lipsum
  *
- * @param {Integer} $amount (1)     - Amount of type
+ * @param {Int}     $amount (1)     - Amount of type
  * @param {String}  $what   (paras) - Type of lipsum
  *
  * @example
