@@ -62,7 +62,7 @@ class Functions {
 
         // Make sure function doesn't already exist, and that the file itself
         //  exists. If we're all good, then include it.
-        if ( ! function_exists( $function ) && file_exists( $_file = __DIR__ . "/functions/$function.php" ) ) {
+        if ( ! function_exists( $function ) && file_exists( $_file = __DIR__ . "/functions/tj_$function.php" ) ) {
             include $_file;
         }
     }
