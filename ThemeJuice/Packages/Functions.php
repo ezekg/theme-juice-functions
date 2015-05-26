@@ -1,18 +1,8 @@
 <?php
 
-namespace ThemeJuice;
+namespace ThemeJuice\Packages;
 
-/**
- * Setup and import functions
- *
- * @package Theme Juice Starter
- * @subpackage Theme Juice Functions
- * @author Ezekiel Gabrielse, Produce Results
- * @link https://produceresults.com
- * @copyright Produce Results (c) 2014
- * @since 1.0.0
- */
-class Functions {
+class Functions implements PackageInterface {
 
     /**
      * @var {Array} - Array that contains functions to include
@@ -62,8 +52,8 @@ class Functions {
 
         // Make sure function doesn't already exist, and that the file itself
         //  exists. If we're all good, then include it.
-        if ( ! function_exists( "tj_$function" ) && file_exists( $_file = __DIR__ . "/functions/$function.php" ) ) {
-            include $_file;
+        if ( ! function_exists( "tj_{$function}" ) && file_exists( $file = __DIR__ . "/lib/{$function}.php" ) ) {
+            include $file;
         }
     }
 }
