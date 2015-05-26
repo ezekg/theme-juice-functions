@@ -2,8 +2,8 @@
 
 /**
  * Get the current query variable
-  *
-  * @return {Int}
+ *
+ * @return {Int}
  */
 function tj_query_var() {
   $paged = 1;

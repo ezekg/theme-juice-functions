@@ -1,12 +1,12 @@
 <?php
 
 /**
-  * Get the page title
-  *
-  * @param {Bool} $display - Automatically echo output
-  *
-  * @return {String} - Page title
-  */
+ * Get the page title
+ *
+ * @param {Bool} $display - Automatically echo output
+ *
+ * @return {String} - Page title
+ */
 function tj_title( $display = true ) {
   $output = null;
 
