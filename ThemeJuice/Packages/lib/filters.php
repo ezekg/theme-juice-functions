@@ -20,19 +20,18 @@ add_filter( "show_admin_bar", "__return_false" );
  */
 add_filter( "redirect_canonical", function( $url ) {
 
-    // Return url if we're on admin pages - as far as I know this shouldn't
-    //  happen, but this is put here for added clarity.
-    if ( is_admin() || $GLOBALS["pagenow"] === "wp-login.php" ) {
-        return $url;
-    }
-
-    // Make sure permalinks are set to '/%postname%/'
-    if ( get_option( "permalink_structure" ) === "/%postname%/" ) {
-
-        if ( is_singular() ) {
-            $url = false;
-        }
-    }
-
+  // Return url if we're on admin pages - as far as I know this shouldn't
+  //  happen, but this is put here for added clarity.
+  if ( is_admin() || $GLOBALS["pagenow"] === "wp-login.php" ) {
     return $url;
+  }
+
+  // Make sure permalinks are set to '/%postname%/'
+  if ( get_option( "permalink_structure" ) === "/%postname%/" ) {
+    if ( is_singular() ) {
+      $url = false;
+    }
+  }
+
+  return $url;
 });

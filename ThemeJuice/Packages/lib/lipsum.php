@@ -21,11 +21,11 @@
  * @return {String|False}
  */
 function tj_lipsum( $amount = 1, $what = "paras" ) {
-    $request = "http://www.lipsum.com/feed/json?amount=$amount&what=$what";
+  $request = "http://www.lipsum.com/feed/json?amount=$amount&what=$what";
 
-    if ( $response = json_decode( file_get_contents( $request ) ) ) {
-        return $response->feed->lipsum;
-    } else {
-        return false;
-    }
+  if ( $response = json_decode( file_get_contents( $request ) ) ) {
+    return $response->feed->lipsum;
+  } else {
+    return false;
+  }
 }

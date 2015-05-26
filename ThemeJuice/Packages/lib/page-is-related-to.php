@@ -8,29 +8,29 @@
  * @return {Bool}
  */
 function tj_page_is_related_to( $slugs ) {
-    global $post;
+  global $post;
 
-    // Check if we're dealing with an array of pages
-    if ( ! is_array( $slugs ) ) {
-        $slugs = array( $slugs );
+  // Check if we're dealing with an array of pages
+  if ( ! is_array( $slugs ) ) {
+    $slugs = array( $slugs );
+  }
+
+  foreach ( $slugs as $slug ) {
+
+    // Get page by slug
+    $page = get_page_by_path( $slug );
+
+    // Check if it's a valid page object
+    if ( is_object( $post ) && is_object( $page ) ) {
+
+      // Check if page is related to $slug
+      $result = ( is_page( $slug ) || "$page->ID" === "$post->post_parent" );
+
+      if ( $result ) {
+        return $result;
+      }
     }
+  }
 
-    foreach ( $slugs as $slug ) {
-
-        // Get page by slug
-        $page = get_page_by_path( $slug );
-
-        // Check if it's a valid page object
-        if ( is_object( $post ) && is_object( $page ) ) {
-
-            // Check if page is related to $slug
-            $result = ( is_page( $slug ) || "$page->ID" === "$post->post_parent" );
-
-            if ( $result ) {
-                return $result;
-            }
-        }
-    }
-
-    return false;
+  return false;
 }

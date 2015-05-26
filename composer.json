@@ -1,22 +1,22 @@
 {
-    "name": "theme-juice/theme-juice-functions",
-    "type": "library",
-    "description": "Functions for Theme Juice framework",
-    "keywords": ["WordPress", "framework", "theme", "haml", "mthaml", "sass", "coffeescript"],
-    "homepage": "https://github.com/theme-juice/theme-juice-functions",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ezekiel Gabrielse",
-            "email": "ezekiel@produceresults.com"
-        }
-    ],
-    "require": {
-        "theme-juice/theme-juice-core": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "ThemeJuice\\": "ThemeJuice/"
-        }
+  "name": "theme-juice/theme-juice-functions",
+  "type": "library",
+  "description": "Functions for Theme Juice framework",
+  "keywords": ["WordPress", "framework", "theme", "haml", "mthaml", "sass", "coffeescript"],
+  "homepage": "https://github.com/theme-juice/theme-juice-functions",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ezekiel Gabrielse",
+      "email": "ezekiel@produceresults.com"
     }
+  ],
+  "require": {
+    "theme-juice/theme-juice-core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ThemeJuice\\": "ThemeJuice/"
+    }
+  }
 }

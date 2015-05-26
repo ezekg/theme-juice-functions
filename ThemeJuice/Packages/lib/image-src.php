@@ -15,5 +15,5 @@
  * @return {String}
  */
 function tj_image_src( $src, $dir = "assets/images" ) {
-    return get_template_directory_uri() . "/$dir/$src";
+  return get_template_directory_uri() . "/$dir/$src";
 }
