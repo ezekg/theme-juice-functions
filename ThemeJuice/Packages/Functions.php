@@ -28,12 +28,11 @@ class Functions implements PackageInterface {
             "query-var" => true,
             "search-form" => true,
             "title" => true,
-        ), $options() );
+        ), $options );
 
-        // Set functions, discald false values, grab keys
+        // Discald false values, grab keys
         $this->functions = array_keys( array_filter( $options ) );
 
-        // Add functions
         if ( ! empty( $this->functions ) ) {
             foreach ( $this->functions as $function ) {
                 $this->register_function( $function );
