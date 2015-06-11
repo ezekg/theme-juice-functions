@@ -68,6 +68,9 @@ add_action( "init", function() {
   remove_action( "wp_head", "adjacent_posts_rel_link", 10, 0 );
   // Display the XHTML generator that is generated on the wp_head hook, WP version
   remove_action( "wp_head", "wp_generator" );
+  // Remove emoji styles
+  remove_action( "wp_head", "print_emoji_detection_script", 7 );
+  remove_action( "wp_print_styles", "print_emoji_styles" );
 });
 
 /**

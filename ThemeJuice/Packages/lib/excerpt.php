@@ -13,7 +13,7 @@ function tj_excerpt( $count = 42, $display = true ) {
   // Trim content after shortcodes are rendered
   $output = wp_trim_words( do_shortcode( get_the_content() ), $count );
 
-  // Echo outout if $display
+  // Echo output if $display
   if ( $display ) {
     echo $output;
   } else {
