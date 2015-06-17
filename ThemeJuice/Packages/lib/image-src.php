@@ -9,7 +9,7 @@
  * @example
  *   ```haml
  *   %img(src="#{tj_image_src("logo.jpeg")}")
- *   %img(src="#{tj_image_src("logo.svg", "assets/svg")}")
+ *   %img(src="#{tj_image_src("logo.svg", "assets/images/svg")}")
  *   ```
  *
  * @return {String}
@@ -21,6 +21,6 @@ function tj_image_src( $src, $dir = "assets/images" ) {
 /**
  * @see tj_image_src
  */
-function tj_svg_src( $src, $dir = "assets/svg") {
+function tj_svg_src( $src, $dir = "assets/images") {
   return tj_image_src( $src, $dir );
 }
