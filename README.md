@@ -7,7 +7,7 @@ This is a [Theme Juice](https://github.com/ezekg/theme-juice-starter) package co
 * [Various `filter` hooks](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/filters.php)
 * [`tj_excerpt()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/excerpt.php)
 * [`tj_featured_image()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/featured-image.php)
-* [`tj_image_src()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/image-src.php)
+* [`tj_image_src()`, `tj_svg_src()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/image-src.php)
 * [`tj_include_partial()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/include-partial.php)
 * [`tj_dummy_text()`, `tj_lipsum()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/lipsum.php)
 * [`tj_dummy_image()`, `tj_lorempixel()`](https://github.com/ezekg/theme-juice-functions/blob/master/ThemeJuice/Packages/lib/lorempixel.php)
