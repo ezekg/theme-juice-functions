@@ -24,7 +24,7 @@ function tj_page_is_related_to( $slugs ) {
     if ( is_object( $post ) && is_object( $page ) ) {
 
       // Check if page is related to $slug
-      $result = ( is_page( $slug ) || "$page->ID" === "$post->post_parent" );
+      $result = ( is_page( $slug ) || "{$page->ID}" === "{$post->post_parent}" );
 
       if ( $result ) {
         return $result;
