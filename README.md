@@ -1,4 +1,5 @@
 # Theme Juice Functions
+[![Packagist](https://img.shields.io/packagist/v/theme-juice/theme-juice-functions.svg)](https://packagist.org/packages/theme-juice/theme-juice-functions)
 
 This is a [Theme Juice](https://github.com/ezekg/theme-juice-starter) package containing commonly-used WordPress helper functions. Below you will find a list of all the functions that are included within the package:
 
